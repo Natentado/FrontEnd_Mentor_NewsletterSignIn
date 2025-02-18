@@ -1,0 +1,65 @@
+.input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: $blue-800;
+    
+    input{
+        border: 1px solid $grey;
+        border-radius: 8px;
+        height: 56px;
+        padding: 16px 24px;
+        outline: none;
+
+        &:focus{
+            border: 1px solid $blue-800;
+            color: $blue-800;
+        }   
+    }
+
+    &.error{
+        &::after{
+            content: "Valid email required";
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: $red;
+            font-family: "Roboto", serif;
+            font-size: 12px;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+
+        input{
+            border: 1px solid $red;
+            background-color: #FF615510;
+            color: $red;
+        }
+    }
+}
+
+.button{
+    width: 100%;
+    padding: 16px 0;
+    border: unset;
+    border-radius: 8px;
+    background-color: $blue-800;
+    color: $white;
+    text-align: center;
+
+    @media (min-width: 1280px) {
+        background-color: $gradient;
+        
+        &:hover{
+            box-shadow: 0 16px 32px #FF615550;
+        }
+    }
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px;
+}

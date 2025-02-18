@@ -5,11 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <script defer src="./script.js"></script>
 
     <title>Newsletter sign-up form with success message</title>
   </head>
   <body>
+    <article>
+      <picture>
+        <img 
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt="News and statistics in your device"
+        />
+      </picture>
+      <div>
+        <div>
+          <h1 class="text-preset-1">
+            Stay updated!
+          </h1>
+
+          <p class="text-preset-2">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <ul>
+            <li class="text-preset-2">
+              <img 
+                src="./assets/images/icon-list.svg"
+                alt="List icon image"
+              />
+              Product discovery and building what matters
+            </li>
+            <li class="text-preset-2">
+              <img 
+                src="./assets/images/icon-list.svg"
+                alt="List icon image"
+              />
+              Measuring to ensure updates are a success
+            </li>
+            <li class="text-preset-2">
+              <img 
+                src="./assets/images/icon-list.svg"
+                alt="List icon image"
+              />
+              And much more!
+            </li>
+          </ul>
+        </div>
+
+        <form>
+          <label class="input text-preset-3">
+            Email address
+            <input 
+              type="email" 
+              placeholder="email@company.com" 
+              class="text-preset-2" 
+            />
+          </label>
+
+          <button class="button text-preset-2-bold">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </article>
   </body>
 </html>

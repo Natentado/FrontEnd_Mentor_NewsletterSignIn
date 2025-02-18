@@ -1,0 +1,61 @@
+@import "./variables";
+@import "./reset";
+@import "./components";
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    > picture{
+        width: 100%;
+        max-height: 284px;
+
+        img{
+            width: 100%;
+            max-height: 284px;
+            object-fit: cover;
+            border-radius: 0 0 18px 18px;
+        }
+    }
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 24px 44px 24px;
+
+        > div{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            h1{
+                color: $blue-800;
+            }
+
+            p{
+                color: $blue-800;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                
+                li{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 16px;
+                    color: $blue-800;
+                }
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
