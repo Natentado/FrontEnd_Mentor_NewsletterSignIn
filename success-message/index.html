@@ -9,13 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
-    <script defer src="../script.js"></script>
+    <script defer src="./script.js"></script>
 
     <title>Newsletter sign-up form with success message</title>
   </head>
   <body>
     <div class="modal">
-      
+      <img 
+        src="../assets/images/icon-success.svg"
+        alt="Success icon"
+      />
+
+      <h1 class="text-preset-1">
+        Thanks for <br /> subscribing!
+      </h1>
+
+      <p class="text-preset-2">
+        A confirmation email has been sent to <b class="text-preset-2-bold">ash@loremcompany.com</b>. 
+        Please open it and click the button inside to confirm your subscription
+      </p>
+
+      <button id="dismissBtn" class="button text-preset-2-bold">
+        Dismiss message
+      </button>
     </div>
   </body>
 </html>

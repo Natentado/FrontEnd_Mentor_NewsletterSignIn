@@ -114,8 +114,23 @@ body {
   flex-direction: column;
   gap: 32px;
   width: 100%;
-  padding: 64px;
+  padding: 64px 24px;
   background-color: #FFFFFF;
+}
+.modal > img {
+  width: 64px;
+  height: 64px;
+}
+.modal > button {
+  margin-top: auto;
+}
+@media (min-width: 767px) {
+  .modal {
+    max-width: 504px;
+    padding: 64px;
+    margin: auto;
+    border-radius: 36px;
+  }
 }
 
 article {
