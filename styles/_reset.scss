@@ -6,4 +6,17 @@
 
 body{
     width: 100dvw;
+    background-color: $blue-700;
+
+    @media (max-width: 768px) {
+        display: flex;
+        min-height: 100dvh;
+    }
+    
+    @media (min-width: 1280px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100dvh;
+    }
 }

@@ -16,6 +16,10 @@
   <body>
     <article>
       <picture>
+        <source 
+          media="(min-width: 1280px)" 
+          srcset="./assets/images/illustration-sign-up-desktop.svg"
+        >
         <img 
           src="./assets/images/illustration-sign-up-mobile.svg"
           alt="News and statistics in your device"
@@ -56,17 +60,24 @@
           </ul>
         </div>
 
-        <form>
-          <label class="input text-preset-3">
+        <form id="newsletterForm">
+          <label
+            id="userEmailContainer"
+            for="userEmail"
+            class="input text-preset-3"
+          >
             Email address
             <input 
-              type="email" 
+              id="userEmail"
+              name="userEmail"
+              type="email"
               placeholder="email@company.com" 
               class="text-preset-2" 
+              required 
             />
           </label>
 
-          <button class="button text-preset-2-bold">
+          <button type="submit" class="button text-preset-2-bold">
             Subscribe to monthly newsletter
           </button>
         </form>

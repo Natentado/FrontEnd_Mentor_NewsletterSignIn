@@ -3,7 +3,7 @@
   font-size: 56px;
   font-weight: 700;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .text-preset-1 {
     font-size: 40px;
   }
@@ -37,6 +37,21 @@
 
 body {
   width: 100dvw;
+  background-color: #36384D;
+}
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    min-height: 100dvh;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+  }
 }
 
 .input {
@@ -88,6 +103,8 @@ body {
     background-color: linear-gradient(to right, #FF6A3A, #FF527B);
   }
   .button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #FF6A3A, #FF527B);
     box-shadow: 0 16px 32px rgba(255, 97, 85, 0.3137254902);
   }
 }
@@ -96,17 +113,21 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
   padding: 64px;
+  background-color: #FFFFFF;
 }
 
 article {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  background-color: #FFFFFF;
 }
 article > picture {
   width: 100%;
   max-height: 284px;
+  object-fit: cover;
 }
 article > picture img {
   width: 100%;
@@ -146,6 +167,58 @@ article > div form {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+@media (min-width: 768px) {
+  article {
+    width: 100%;
+    max-width: 608px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 36px;
+  }
+  article > picture {
+    max-height: 358px;
+  }
+  article > picture img {
+    max-height: 358px;
+    border-radius: 16px;
+  }
+  article > div {
+    padding: unset;
+    gap: 24px;
+  }
+  article > div > form {
+    gap: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  article {
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+    width: 100%;
+    max-width: 904px;
+    padding: 32px;
+    margin: unset;
+  }
+  article > picture {
+    order: 1;
+    max-width: 400px;
+    max-height: 593px;
+  }
+  article > picture img {
+    max-width: 400px;
+    max-height: 593px;
+  }
+  article > div {
+    gap: 32px;
+  }
+  article > div > div {
+    gap: 32px;
+  }
+  article > div > form {
+    gap: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
